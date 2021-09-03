@@ -40,6 +40,7 @@ export interface Reply {
   title: string
   value: string
   messageId?: any
+  nextBotId?: any
 }
 
 export interface QuickReplies {
@@ -61,6 +62,7 @@ export interface IMessage {
   received?: boolean
   pending?: boolean
   quickReplies?: QuickReplies
+  optionTitle?: string
 }
 
 export type IChatMessage = IMessage

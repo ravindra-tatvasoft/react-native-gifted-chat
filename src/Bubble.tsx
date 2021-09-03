@@ -334,6 +334,9 @@ export default class Bubble<
       nextMessage,
       renderQuickReplySend,
       quickReplyStyle,
+      quickReplyText,
+      quickReplyRoot,
+      optionTitleStyle,
     } = this.props
     if (currentMessage && currentMessage.quickReplies) {
       const { containerStyle, wrapperStyle, ...quickReplyProps } = this.props
@@ -348,6 +351,9 @@ export default class Bubble<
             nextMessage,
             renderQuickReplySend,
             quickReplyStyle,
+            quickReplyRoot,
+            optionTitleStyle,
+            quickReplyText
           }}
         />
       )

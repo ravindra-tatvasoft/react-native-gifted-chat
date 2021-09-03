@@ -131,6 +131,9 @@ export interface GiftedChatProps<TMessage extends IMessage = IMessage> {
   options?: { [key: string]: any }
   optionTintColor?: string
   quickReplyStyle?: StyleProp<ViewStyle>
+  quickReplyRoot?: StyleProp<ViewStyle>
+  quickReplyText?: StyleProp<TextStyle>
+  optionTitleStyle?: StyleProp<ViewStyle>
   /* optional prop used to place customView below text, image and video views; default is false */
   isCustomViewBottom?: boolean
   /* infinite scroll up when reach the top of messages container, automatically call onLoadEarlier function if exist */
